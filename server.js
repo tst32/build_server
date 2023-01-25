@@ -15,7 +15,7 @@ try {
   process.exit(1)
 }
 
-const allowedOrigins = [  process.env.ALLOWED_DOMAINS_1, process.env.ALLOWED_DOMAINS_2, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_4, 'http://localhost', 'http://127.0.0.1'  ]
+const allowedOrigins = [  process.env.ALLOWED_DOMAINS_5, process.env.ALLOWED_DOMAINS_1, process.env.ALLOWED_DOMAINS_2, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_4, 'http://localhost', 'http://127.0.0.1'  ]
 
 
 // Create OpenAI configuration
