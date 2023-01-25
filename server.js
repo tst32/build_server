@@ -5,7 +5,7 @@ import * as dotenv from 'dotenv'
 import Filter from 'bad-words'
 import { rateLimitMiddleware } from './middlewares/rateLimitMiddleware.js'
 
-const allowedOrigins = [  'https://auth-react-chatgpt.firebaseapp.com',  'https://auth-react-chatgpt.web.app/' ,  'http://localhost', 'http://127.0.0.1'  ]
+const allowedOrigins = [  process.env.ALLOWED_DOMAINS_1, process.env.ALLOWED_DOMAINS_2, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_4, 'http://localhost', 'http://127.0.0.1'  ]
 
 const filter = new Filter()
 
