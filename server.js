@@ -5,8 +5,6 @@ import * as dotenv from 'dotenv'
 import Filter from 'bad-words'
 import { rateLimitMiddleware } from './middlewares/rateLimitMiddleware.js'
 
-const allowedOrigins = [  process.env.ALLOWED_DOMAINS_1, process.env.ALLOWED_DOMAINS_2, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_4, 'http://localhost', 'http://127.0.0.1'  ]
-
 const filter = new Filter()
 
 // Load environment variables from .env file
@@ -16,6 +14,9 @@ try {
   console.error('Error loading environment variables:', error)
   process.exit(1)
 }
+
+const allowedOrigins = [  process.env.ALLOWED_DOMAINS_1, process.env.ALLOWED_DOMAINS_2, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_3, process.env.ALLOWED_DOMAINS_4, 'http://localhost', 'http://127.0.0.1'  ]
+
 
 // Create OpenAI configuration
 const configuration = new Configuration({
